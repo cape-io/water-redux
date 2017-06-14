@@ -28,5 +28,5 @@ export default function initStore(props) {
     screenSize,
   })
 
-  return createStore(reducers, applyMiddleware(thunk))
+  return createStore(reducers, initState, applyMiddleware(thunk))
 }
