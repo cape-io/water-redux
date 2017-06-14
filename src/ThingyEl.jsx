@@ -14,3 +14,4 @@ Thingy.propTypes = {
   isActive: PropTypes.bool.isRequired,
   toggleActive: PropTypes.func.isRequired,
 }
+export default Thingy

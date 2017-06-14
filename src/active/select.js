@@ -1,3 +1,3 @@
 import { get } from 'lodash/fp'
 
-export const getIsMobile = get('active.isActive')
+export const getIsActive = get('active.isActive')

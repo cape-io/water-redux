@@ -1,4 +1,5 @@
 import { gte, flow } from 'lodash/fp'
+import { getIsMobile } from './select'
 
 // REDUX ACTIONS
 export const IS_MOBILE = 'screen/MOBILE'
@@ -25,7 +26,7 @@ function getWindowWidth() {
 }
 // true when sent a number under 960.
 const skinnyWindow = gte(960)
-const checkSkinny = flow(getWindowWidth, skinnyWindow)
+export const checkSkinny = flow(getWindowWidth, skinnyWindow)
 
 export function getWindowAction() {
   return (dispatch, getState) => {

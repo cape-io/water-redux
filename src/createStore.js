@@ -4,7 +4,7 @@ import { get, negate, overSome } from 'lodash/fp'
 
 import active from './active/reducer'
 
-import { checkSkinny } from './active/actions'
+import { checkSkinny } from './screen/actions'
 import screenSize from './screen/reducer'
 
 // Util functions to select state from props.
