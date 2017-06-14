@@ -1,6 +1,7 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux'
 import thunk from 'redux-thunk'
 import { get, negate, overSome } from 'lodash/fp'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 import active from './active/reducer'
 
@@ -28,5 +29,5 @@ export default function initStore(props) {
     screenSize,
   })
 
-  return createStore(reducers, initState, applyMiddleware(thunk))
+  return createStore(reducers, initState, composeWithDevTools(applyMiddleware(thunk)))
 }
