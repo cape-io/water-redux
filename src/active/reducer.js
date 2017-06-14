@@ -8,7 +8,7 @@ const initState = {
 export default function reducer(state = initState, action) {
   switch (action.type) {
   case TOGGLE:
-    return { ...state, isActive: true }
+    return { ...state, isActive: !state.isActive }
   default:
     return state
   }
