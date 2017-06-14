@@ -1,3 +1,5 @@
+import { gte, flow } from 'lodash/fp'
+
 // REDUX ACTIONS
 export const IS_MOBILE = 'screen/MOBILE'
 export function setIsMobile() {
